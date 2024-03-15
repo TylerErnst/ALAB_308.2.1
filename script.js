@@ -1,4 +1,6 @@
-// Your task is to create a program that advises a group of environmental scientists how to handle the growth and spread of a unique plant species under their supervision. You must develop a growth control system that will monitor and predict the plant growth, making decisions based on the available space and potential growth.
+// Your task is to create a program that advises a group of environmental scientists how to handle the growth
+// and spread of a unique plant species under their supervision. You must develop a growth control system that
+// will monitor and predict the plant growth, making decisions based on the available space and potential growth.
 // Here is the information you have been given:
 // The area in which the plants are contained is circular, with a radius of 5 meters.
 const growthRadius = 5;
@@ -27,17 +29,22 @@ let requiredArea = totalPlants*requiredAreaPerPlant;
 console.log(`Area needed: ${requiredArea}m²`);
 // Implement control flow to make decisions on whether the plants should be:
 // Pruned, to stop them from exceeding the capacity of the garden.
-// This condition should be met if the plant count after the given number of weeks is greater than 80% of the maximum capacity of the garden.
+// This condition should be met if the plant count after the given number of weeks is
+// greater than 80% of the maximum capacity of the garden.
 if (requiredArea > initialArea*.8){
     console.log('Prune plants.');
 }
 // Monitored, if they are growing at an acceptable rate.
-// This condition should be met if the plant count is between 50% and 80% of the maximum capacity of the garden after the given number of weeks.
+// This condition should be met if the plant count is between 
+//50% and 80% of the maximum capacity of the garden
+// after the given number of weeks.
 else if (requiredArea  > initialArea*.5){
     console.log('Plants should be monitored.');
 }
 // Planted, if there is room to plant more plants.
-// This condition should be met if the plant count after the given number of weeks is less than 50% of the maximum capacity of the garden.
+// This condition should be met if the plant count after
+// the given number of weeks is less than
+// 50% of the maximum capacity of the garden.
 else {
     console.log('There is room to plant more.');
 }
